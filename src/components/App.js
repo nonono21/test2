@@ -1,30 +1,15 @@
-import React from 'react';
-import Test from './scene.js';
 import '../App.css';
 import 'typeface-roboto';
-import Button from '@material-ui/core/Button';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import Scene from "./scene";
 
-  
+class App extends Component {
 
-
-
-
-
-
-
-
-
-function App() {
-  return (
-    <div className="App">
-      <div className="App-header">
-        <Test />
-        <Button variant="contained" color="secondary">
-          Hello hello totooo
-        </Button>
-      </div>
-    </div>
-  );
+  render() {
+    return <Scene />
+  }
 }
+  
 
 export default App;
