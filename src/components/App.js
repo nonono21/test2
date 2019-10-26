@@ -2,17 +2,12 @@ import '../App.css';
 import 'typeface-roboto';
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Scene from "./scene";
+import Layout from "./layout"
+
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        tata
-        <Scene />
-        toto
-      </div>
-    );
+    return <Layout />
   }
 }
   

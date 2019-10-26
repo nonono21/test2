@@ -1,6 +1,5 @@
 import React from 'react';
 import * as THREE from "three";
-import BurgerMenu from "./burgerMenu";
 
 class Scene extends React.Component {
 
