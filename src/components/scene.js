@@ -1,6 +1,14 @@
 import React from 'react';
 import * as THREE from "three";
 
+
+
+
+
+
+
+
+
 class Scene extends React.Component {
 
 
@@ -17,6 +25,16 @@ class Scene extends React.Component {
         scene.add( cube );
         camera.position.z = 5;
 
+
+        // Resize de la scene
+        window.addEventListener('resize', onResize, false);
+
+        function onResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+          }
+
         var animate = function () {
           requestAnimationFrame( animate );
           cube.rotation.x += 0.08;
@@ -29,7 +47,7 @@ class Scene extends React.Component {
     }
 
     render() {
-        return <div />
+        return <div>toito</div>
     }
 }
 
