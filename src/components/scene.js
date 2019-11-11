@@ -39,7 +39,6 @@ class Scene extends React.Component {
 
     render() {
         return <div ref={ref => (this.mount = ref)} />
-
     }
 }
 
